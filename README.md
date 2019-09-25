@@ -1,4 +1,4 @@
-# Classical Cipher Suite
+# Classical Cipher Suite (CCS)
 
 The goal of this repository is to be a playground for the experimentation of
 classical cryptographic ciphers.
@@ -6,38 +6,41 @@ classical cryptographic ciphers.
 
 ## Development
 
+### Local Environment
 
-### Virtual Environment
+#### Virtual Environment
 
-#### Activation
+##### Activation
 
 ```bash
 virtualenv --python python3 venv
 source venv/bin/activate
 ```
 
-#### Deactivation
+##### Deactivation
 
 ```bash
 deactivate
 ```
 
 
-### Dependencies
+#### Dependencies
 
 ```bash
 pip3 install -r pip3-requirements.txt
 ```
 
 
-### Linting
+### Code Checks
+
+#### Linting
 
 ```bash
 pylint
 ```
 
 
-### Test Cases
+#### Test Cases
 
 ```bash
 python3 -m pytest
