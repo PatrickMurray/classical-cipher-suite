@@ -27,7 +27,13 @@ deactivate
 #### Dependencies
 
 ```bash
-pip3 install -r pip3-requirements.txt
+pip3 install -r requirements.txt
+```
+
+#### Development Installation
+
+```bash
+pip3 install -e .
 ```
 
 
@@ -36,12 +42,12 @@ pip3 install -r pip3-requirements.txt
 #### Linting
 
 ```bash
-pylint
+pylint ccs
 ```
 
 
 #### Test Cases
 
 ```bash
-python3 -m pytest
+pytest
 ```
