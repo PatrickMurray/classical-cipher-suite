@@ -5,23 +5,12 @@ TODO
 
 
 import ccs.cipher.abstract
+import ccs.cipher.rot13
 
 
-class CaesarCipher(ccs.cipher.abstract.AbstractCipher):
+class CaesarCipher(ccs.cipher.rot13.Rot13Cipher):
     """
     TODO
     """
 
-
-    def encipher(self, message):
-        """
-	TODO
-	"""
-        return message
-
-
-    def decipher(self, ciphertext):
-        """
-	TODO
-	"""
-        return ciphertext
+    pass

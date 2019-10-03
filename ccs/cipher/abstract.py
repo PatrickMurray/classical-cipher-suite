@@ -6,6 +6,9 @@ TODO
 
 import abc
 
+import ccs.stream.plaintext
+import ccs.stream.ciphertext
+
 
 class AbstractCipher(abc.ABC):
     """
@@ -18,15 +21,15 @@ class AbstractCipher(abc.ABC):
 
 
     @abc.abstractmethod
-    def encipher(self, message):
+    def encipher(self, plaintext: ccs.stream.plaintext.PlaintextStream) -> ccs.stream.ciphertext.CiphertextStream:
         """
 	TODO
 	"""
-        return message
+        return plaintext
 
 
     @abc.abstractmethod
-    def decipher(self, ciphertext):
+    def decipher(self, ciphertext: ccs.stream.ciphertext.CiphertextStream) -> ccs.stream.plaintext.PlaintextStream:
         """
 	TODO
 	"""
