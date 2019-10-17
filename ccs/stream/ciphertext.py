@@ -8,4 +8,7 @@ import ccs.stream.text
 
 
 class CiphertextStream(ccs.stream.text.TextStream):
+    """
+    TODO
+    """
     pass

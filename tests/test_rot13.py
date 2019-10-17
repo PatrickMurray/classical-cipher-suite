@@ -8,12 +8,11 @@ import ccs.cipher.rot13
 def test_rot13_encipher():
     message = "hello world"
 
-    #configuration = ccs.configuration.
-
-    cipher = ccs.cipher.rot13.Rot13Cipher(None)
-
-    ciphertext = str(cipher.encipher(message))
-
-    print(ciphertext)
+    cipher = ccs.cipher.rot13.Rot13Cipher()
+    ciphertext = cipher.encipher(message)
 
     assert ciphertext == "foobar"
+
+    plaintext = cipher.decipher(ciphertext)
+
+    assert plaintext == message
